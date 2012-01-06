@@ -56,15 +56,17 @@ function createGravatar(options)
 
 exports.createGravatar = createGravatar;
 
-exports.GRAVATAR_DEFAULT_404        = "404";
-exports.GRAVATAR_DEFAULT_OUTLINE    = "mm";
-exports.GRAVATAR_DEFAULT_GEOMETRIC  = "identicon";
-exports.GRAVATAR_DEFAULT_MONSTER    = "monsterid";
-exports.GRAVATAR_DEFAULT_FACES      = "wavater";
-exports.GRAVATAR_DEFAULT_RETRO      = "retro";
-exports.GRAVATAR_DEFAULT_CUSTOM     = "custom";
+exports.DEFAULT_STYLE_404        = GRAVATAR_DEFAULT_404;
+exports.DEFAULT_STYLE_OUTLINE    = GRAVATAR_DEFAULT_OUTLINE;
+exports.DEFAULT_STYLE_GEOMETRIC  = GRAVATAR_DEFAULT_GEOMETRIC;
+exports.DEFAULT_STYLE_MONSTER    = GRAVATAR_DEFAULT_MONSTER;
+exports.DEFAULT_STYLE_FACES      = GRAVATAR_DEFAULT_FACES;
+exports.DEFAULT_STYLE_RETRO      = GRAVATAR_DEFAULT_RETRO;
+exports.DEFAULT_STYLE_CUSTOM     = GRAVATAR_DEFAULT_CUSTOM;
 
-exports.GRAVATAR_RATING_G   = "g";
-exports.GRAVATAR_RATING_PG  = "pg";
-exports.GRAVATAR_RATING_R   = "r";
-exports.GRAVATAR_RATING_X   = "x";
+exports.DEFAULT_STYLE_ROBOHASH   = ROBOHASH_DEFAULT_ROBOHASH;
+
+exports.RATING_G   = "g";
+exports.RATING_PG  = "pg";
+exports.RATING_R   = "r";
+exports.RATING_X   = "x";
