@@ -8,6 +8,9 @@ var GRAVATAR_DEFAULT_FACES      = "wavater";
 var GRAVATAR_DEFAULT_RETRO      = "retro";
 var GRAVATAR_DEFAULT_CUSTOM     = "custom";
 
+var ROBOHASH_DEFAULT_ROBOHASH   = "robohash";
+var ROBOHASH_URL                = "http://robohash.org/";
+
 var GRAVATAR_RATING_G   = "g";
 var GRAVATAR_RATING_PG  = "pg";
 var GRAVATAR_RATING_R   = "r";
@@ -28,6 +31,11 @@ function createGravatar(options)
     if ( style === GRAVATAR_DEFAULT_CUSTOM )
     {
         style = GRAVATAR_DEFAULT_404;
+    }
+
+    if ( style === GRAVATAR_DEFAULT_ROBOHASH )
+    {
+        style = Ti.Network.encodeURIComponent(ROBOHASH_URL + "/" + md5 + "?bgset=any&size=" + size + "x" + size);
     }
 
     url += "?d=" + style;
