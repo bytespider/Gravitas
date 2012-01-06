@@ -24,6 +24,7 @@ information.
 ###createGravatar
 
 options
+
 * email - [`string`] the email address of the user
 * defaultStyle - [`string`] the style of defeault images when the user email doesn't exist (_default images styles constant_)
 * rating - [`string`] the rating of the image to display (_image ratings constant_)
